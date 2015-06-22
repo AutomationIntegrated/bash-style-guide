@@ -37,6 +37,18 @@ foo() {
 }
 ```
 
+Constants and Environment Variable Names; all caps, separated with underscores, declared at the top of the file.
+
+```bash
+# wrong
+path="$PATH"
+
+# right
+readonly PATH_TO_FILES='/some/path'
+
+declare -xr ORACLE_SID='PROD'
+```
+
 ### Semicolons
 
 You don't use semicolons on the command line (I hope), don't use them in scripts.
