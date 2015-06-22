@@ -17,6 +17,26 @@ Aesthetics
 
 tabs.
 
+### Case
+
+Snake case for function and variable names
+
+``` bash
+# wrong
+myFooVariable="something"
+
+MY_FOO_FUNCTION(){
+    echo "something goes here"
+}
+
+# right
+some_variabel_name="something"
+
+foo() {
+    local i=foo # this is local, preferred
+}
+```
+
 ### Semicolons
 
 You don't use semicolons on the command line (I hope), don't use them in scripts.
